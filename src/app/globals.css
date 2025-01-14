@@ -18,4 +18,35 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures charts wrap if screen size is small */
+  gap: 2rem;
+}
+
+canvas {
+  max-width: 100%; /* Ensures canvas resizes properly */
+  height: auto;
+}
+
+div {
+  background: var(--background); /* Ensure divs have consistent backgrounds */
+}
+
